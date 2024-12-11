@@ -32,6 +32,7 @@ nnoremap <space> za
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'HoNamDuong/hybrid.nvim'
 Plug 'https://github.com/jpalardy/vim-slime.git', { 'for': 'python' }
 " " Optional: If you want a nice status line in Vim
 Plug 'ellisonleao/gruvbox.nvim'
