@@ -64,4 +64,4 @@ autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 set background=dark 
-colorscheme gruvbox
+colorscheme hybrid
