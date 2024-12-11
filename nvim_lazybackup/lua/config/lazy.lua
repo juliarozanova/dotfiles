@@ -76,7 +76,6 @@ require("lazy").setup({
     },
   },
 })
-require("lspconfig").jdtls.setup({})
 require("remote-nvim").setup({
   -- Add your other configuration parameters as usual
   offline_mode = {
