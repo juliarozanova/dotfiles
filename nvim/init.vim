@@ -18,7 +18,6 @@ call vundle#begin('~/.config/nvim/bundle/')
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin('elzr/vim-json')
-Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()            " required
 
