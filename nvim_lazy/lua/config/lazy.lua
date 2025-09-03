@@ -20,8 +20,6 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim",                            import = "lazyvim.plugins" },
     { import = "lazyvim.plugins.extras.lang.python" }, -- <-- THIS LINE
-    { import = "lazyvim.plugins.extras.lang.java" },
-    { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.dap.core" },
 
     -- import/override with your plugins
@@ -39,20 +37,18 @@ require("lazy").setup({
       }
     },
     {
-      "HoNamDuong/hybrid.nvim",
-      lazy = false,
-      priority = 1000,
-      opts = {},
+      "williamboman/mason.nvim",
+      opts = {
+        ensure_installed = {
+          "stylua",
+          "shellcheck",
+          "shfmt",
+          "flake8",
+          "ruff",
+        },
+      },
     },
-    {
-      'MeanderingProgrammer/render-markdown.nvim',
-      dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
-      -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
-      -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
-      ---@module 'render-markdown'
-      ---@type render.md.UserConfig
-      opts = {},
-    },
+
     {
       "christoomey/vim-tmux-navigator",
       cmd = {
