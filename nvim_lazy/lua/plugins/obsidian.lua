@@ -78,6 +78,5 @@ return {
       },
     },
 
-    new_notes_location = "00-Inbox/",
   },
 }
