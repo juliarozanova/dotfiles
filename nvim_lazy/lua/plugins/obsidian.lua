@@ -17,6 +17,8 @@ return {
 
     -- see below for full list of optional dependencies 👇
   },
+  ---@module 'obsidian'
+  ---@type obsidian.config
   opts = {
     workspaces = {
       {
